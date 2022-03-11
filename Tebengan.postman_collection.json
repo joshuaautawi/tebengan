@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "10684c7a-11b8-4328-8635-ba9c58beb519",
+		"name": "Tebengan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get All Trips",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3009/trip?page=6",
+					"host": [
+						"localhost"
+					],
+					"port": "3009",
+					"path": [
+						"trip"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create trips",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startLandMark\": \"BSD\",\r\n    \"endLandMark\": \"Sudirman\",\r\n    \"driver\": {\r\n        \"firstName\": \"Bailey\",\r\n        \"lastName\": \"Asd\"\r\n    },\r\n    \"orders\": [\r\n        {\r\n            \"passenger\": {\r\n                \"firstName\": \"Beagle\",\r\n                \"lastName\": \"Arpino\"\r\n            },\r\n            \"pickupLandMark\": \"BSD\",\r\n            \"dropoffLandMark\": \"Sudirman\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3009/trip",
+					"host": [
+						"localhost"
+					],
+					"port": "3009",
+					"path": [
+						"trip"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
