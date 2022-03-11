@@ -36,7 +36,7 @@ const getAllTrips = async (req, res) => {
 };
 
 const createTrips = async (req, res) => {
-//   try {
+  try {
     const { startLandMark, endLandMark, driver, orders } = req.body;
     const newTrips = {
       startLandMark,
@@ -45,7 +45,7 @@ const createTrips = async (req, res) => {
       orders,
     };
 
-    const read = await fs.readFileSync("trips.json");
+    const read = fs.readFileSync("trips.json");
     let data = JSON.parse(read);
     data.trips.push(newTrips);
     data = JSON.stringify(data);
@@ -53,13 +53,13 @@ const createTrips = async (req, res) => {
     return res
       .status(201)
       .json({ status: "succes", statusCode: 201, data: newTrips });
-//   } catch (e) {
-//     return res.status(500).json({
-//       status: "failed",
-//       statusCode: 500,
-//       message: "Internal Server Error !",
-//     });
-//   }
+  } catch (e) {
+    return res.status(500).json({
+      status: "failed",
+      statusCode: 500,
+      message: "Internal Server Error !",
+    });
+  }
 };
 
 module.exports = { getAllTrips, createTrips };
