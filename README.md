@@ -12,7 +12,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 npm run dev / node server.js
-
+Please import Tebengan.postman_collection.json file into your postman if you want to try it postman
 ## API Reference
 
 #### Get all Trips With Pagination
