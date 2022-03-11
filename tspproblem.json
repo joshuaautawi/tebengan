@@ -1,0 +1,31 @@
+{
+  "driver": {
+    "id": 111,
+    "locationIndex": 0
+  },
+  "passengers": [
+    {
+      "id": 1,
+      "locationIndex": 1
+    },
+    {
+      "id": 2,
+      "locationIndex": 2
+    },
+    {
+      "id": 3,
+      "locationIndex": 3
+    },
+    {
+      "id": 4,
+      "locationIndex": 4
+    }
+  ],
+  "durationMatrix": [
+    [0, 1370, 3208, 3153, 3515],
+    [122, 0, 3277, 3224, 3584],
+    [3549, 3623, 0, 360, 1228],
+    [3496, 3571, 360, 0, 1175],
+    [3882, 3957, 1089, 1035, 0]
+  ]
+}
