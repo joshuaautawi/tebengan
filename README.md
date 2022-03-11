@@ -3,7 +3,7 @@
 Please find the 1. caesar_cipher.js file.
 
 # Simple Traveling Sales Problem
-Please find the 2. simple_traveling_salesman_problem.js
+Please find the 2. simple_traveling_salesman_problem.js file
 
 # Sample Rest API
 
