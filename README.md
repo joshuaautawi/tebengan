@@ -11,7 +11,7 @@ Please find the 2. simple_traveling_salesman_problem.js
 npm install
 
 ### Compiles and hot-reloads for development
-npm run dev
+npm run dev / node server.js
 
 ## API Reference
 
