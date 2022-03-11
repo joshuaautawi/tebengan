@@ -11,7 +11,7 @@ Please find the 2. simple_traveling_salesman_problem.js file
 npm install
 
 ### Compiles and hot-reloads for development
-npm run dev / node server.js
+npm run dev / node server.js <br/>
 Please import Tebengan.postman_collection.json file into your postman if you want to try it postman
 ## API Reference
 
